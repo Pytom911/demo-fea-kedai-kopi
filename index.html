@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FEA — Fea Coffea & Roastery | Kraksaan Probolinggo</title>
+<meta name="description" content="FEA Coffea — specialty coffee & micro-roastery di Kraksaan, Probolinggo. Single origin Nusantara, manual brew, espresso, work from cafe.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={
+  theme:{
+    extend:{
+      colors:{
+        primary:'#64161A',
+        primaryDark:'#473151',
+        secondary:'#502C46',
+        accent:'#F3EDBD',
+        light:'#F8F6EE',
+        ink:'#2A2029',
+        muted:'#6B5B6A'
+      },
+      fontFamily:{
+        sans:['Instrument Sans','Inter','system-ui','sans-serif'],
+        serif:['Cormorant Garamond','serif']
+      }
+    }
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light text-ink antialiased">
+<div id="topbar" class="bg-ink text-accent text-[11px] tracking-[0.14em] uppercase text-center py-2 px-4">
+  <span class="opacity-80">Jl. Panglima Sudirman No.47, Kraksaan — </span> Buka 09.00 – 17.00 &nbsp;·&nbsp; Jumat Tutup
+</div>
+
+<nav id="nav" class="sticky top-0 z-50 bg-light/80 backdrop-blur-xl border-b border-ink/5">
+  <div class="max-w-[1160px] mx-auto px-6 h-[64px] flex items-center justify-between gap-6">
+    <a href="#beranda" class="flex items-center gap-3 shrink-0">
+      <img src="assets/logo.png" alt="FEA Logo" class="h-9 w-9 object-contain rounded-full bg-white border border-ink/10">
+      <span class="font-serif text-[22px] font-semibold tracking-tight leading-none">FEA<span class="font-light opacity-60">.</span></span>
+      <span class="hidden sm:inline text-[10px] tracking-[0.18em] uppercase opacity-50 border-l border-ink/10 pl-3 ml-1">Coffea & Roastery</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-7 text-[13px] tracking-wide">
+      <a href="#beranda" class="nav-link font-medium text-primary border-b border-primary pb-1">Beranda</a>
+      <a href="#tentang" class="nav-link opacity-60 hover:opacity-100 transition">Tentang</a>
+      <a href="#menu" class="nav-link opacity-60 hover:opacity-100 transition">Menu</a>
+      <a href="#fasilitas" class="nav-link opacity-60 hover:opacity-100 transition">Fasilitas</a>
+      <a href="#lokasi" class="nav-link opacity-60 hover:opacity-100 transition">Lokasi</a>
+    </div>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="https://wa.me/628126111947" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white text-[13px] font-medium px-5 py-2.5 rounded-full hover:bg-primaryDark transition"><i class="bi bi-whatsapp"></i> Reservasi</a>
+    </div>
+    <button id="menuBtn" class="lg:hidden w-10 h-10 rounded-full border border-ink/10 grid place-items-center"><i class="bi bi-list text-xl"></i></button>
+  </div>
+  <div id="mobileNav" class="hidden lg:hidden border-t border-ink/10 bg-light px-6 py-6 space-y-4">
+    <a href="#beranda" class="block text-sm">Beranda</a>
+    <a href="#tentang" class="block text-sm opacity-70">Tentang</a>
+    <a href="#menu" class="block text-sm opacity-70">Menu</a>
+    <a href="#fasilitas" class="block text-sm opacity-70">Fasilitas</a>
+    <a href="#lokasi" class="block text-sm opacity-70">Lokasi</a>
+    <a href="https://wa.me/628126111947" target="_blank" class="inline-flex mt-2 bg-primary text-white px-5 py-2.5 rounded-full text-sm"><i class="bi bi-whatsapp mr-2"></i> Chat WhatsApp</a>
+  </div>
+</nav>
+
+<section id="beranda" class="max-w-[1160px] mx-auto px-6 pt-8 lg:pt-12">
+  <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-6 items-start">
+    <div class="pt-4 lg:pt-10">
+      <div class="inline-flex items-center gap-2 bg-white border border-ink/10 rounded-full px-3 py-1.5 text-[11px] tracking-wide">
+        <span class="bg-accent border border-ink/10 rounded-full px-2 py-0.5 font-semibold">★ 4.7</span>
+        <span class="opacity-60">178 ulasan · Specialty & Micro-Roastery</span>
+      </div>
+      <h1 class="font-serif text-[42px] lg:text-[64px] font-medium leading-[0.9] tracking-[-0.03em] mt-6">
+        Kopi <span class="italic font-light">Nusantara</span><br>
+        disangrai<br>
+        di Kraksaan<span class="text-primary">.</span>
+      </h1>
+      <p class="text-[15px] leading-7 opacity-60 max-w-[44ch] mt-5">
+        Kedai tenang untuk nongkrong, WFC, dan ngobrol santai. Single origin pilihan, manual brew presisi, dan susu segar — semua diracik dari beans hasil roasting sendiri.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-7">
+        <a href="#menu" class="bg-primary text-white px-7 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2 hover:bg-primaryDark transition">Lihat Menu <i class="bi bi-arrow-right"></i></a>
+        <a href="https://wa.me/628126111947" target="_blank" class="bg-white border border-ink/10 px-7 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2 hover:border-ink/20 transition"><i class="bi bi-geo-alt"></i> Petunjuk Arah</a>
+      </div>
+      <div class="flex items-center gap-6 mt-8 pt-7 border-t border-ink/10">
+        <div class="flex items-center gap-3">
+          <span class="w-9 h-9 rounded-full bg-white border border-ink/10 grid place-items-center"><i class="bi bi-cup-hot text-sm"></i></span>
+          <div class="text-xs leading-tight"><b class="block text-sm">100%</b><span class="opacity-50">Arabika Nusantara</span></div>
+        </div>
+        <div class="w-px h-9 bg-ink/10"></div>
+        <div class="flex items-center gap-3">
+          <span class="w-9 h-9 rounded-full bg-white border border-ink/10 grid place-items-center"><i class="bi bi-wifi text-sm"></i></span>
+          <div class="text-xs leading-tight"><b class="block text-sm">Free Wi-Fi</b><span class="opacity-50">Indoor & Outdoor</span></div>
+        </div>
+        <div class="hidden sm:flex items-center gap-3">
+          <span class="w-9 h-9 rounded-full bg-white border border-ink/10 grid place-items-center"><i class="bi bi-p-circle text-sm"></i></span>
+          <div class="text-xs leading-tight"><b class="block text-sm">Parkir Gratis</b><span class="opacity-50">Tepi jalan</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="rounded-[28px] overflow-hidden bg-white border border-ink/10 p-2">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=80" alt="Interior FEA" class="w-full h-[420px] lg:h-[520px] object-cover rounded-[20px]">
+        <div class="absolute left-4 lg:left-8 bottom-6 bg-white rounded-2xl p-3 pr-4 flex items-center gap-3 shadow-xl border border-ink/5">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=200&q=80" class="w-12 h-12 rounded-xl object-cover">
+          <div class="text-xs leading-tight">
+            <b class="block text-sm">Es Kopi Susu Gula Aren</b>
+            <span class="opacity-50">Signature · Rp 25K</span>
+          </div>
+          <span class="ml-2 w-8 h-8 rounded-full bg-primary text-white grid place-items-center"><i class="bi bi-plus"></i></span>
+        </div>
+        <div class="absolute right-4 lg:right-2 top-6 bg-ink text-accent rounded-2xl px-4 py-3 text-xs leading-tight shadow-xl">
+          <div class="opacity-60 tracking-[0.14em] uppercase text-[10px]">Jam Hari Ini</div>
+          <b class="text-sm text-white">09.00 — 17.00 WIB</b>
+          <div class="opacity-60">Cash only · Wi-Fi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-3 gap-3 mt-6">
+    <div class="bg-white border border-ink/10 rounded-2xl px-5 py-4 flex items-center justify-between">
+      <div><div class="text-[11px] tracking-[0.14em] uppercase opacity-40">Rating</div><b class="text-lg leading-none">4.7 / 5</b><div class="text-xs opacity-50">178 ulasan</div></div><i class="bi bi-star-fill text-accent bg-primary w-9 h-9 grid place-items-center rounded-full"></i>
+    </div>
+    <div class="bg-primary text-white rounded-2xl px-5 py-4">
+      <div class="text-[11px] tracking-[0.14em] uppercase opacity-60">Layanan</div><b class="text-sm leading-tight">Dine-in · Takeaway · Delivery · Reservasi</b>
+    </div>
+    <div class="hidden md:flex bg-white border border-ink/10 rounded-2xl px-5 py-4 items-center justify-between">
+      <div><div class="text-[11px] tracking-[0.14em] uppercase opacity-40">Lokasi</div><b class="text-sm">Jl. Panglima Sudirman 47</b><div class="text-xs opacity-50">Kraksaan, Probolinggo</div></div><i class="bi bi-geo-alt w-9 h-9 grid place-items-center rounded-full border border-ink/10"></i>
+    </div>
+  </div>
+</section>
+
+<section id="tentang" class="max-w-[1160px] mx-auto px-6 mt-16">
+  <div class="grid lg:grid-cols-2 gap-0 rounded-[32px] overflow-hidden border border-ink/10 bg-white">
+    <img src="https://images.unsplash.com/photo-1559925393-8be0ec47690c?auto=format&fit=crop&w=800&q=80" class="w-full h-[360px] lg:h-full object-cover min-h-[420px]">
+    <div class="px-8 lg:px-10 py-9 lg:py-10">
+      <div class="text-[11px] tracking-[0.18em] uppercase opacity-40">Tentang FEA</div>
+      <h2 class="font-serif text-[32px] lg:text-[38px] leading-none tracking-tight mt-3">Micro-roastery<br><span class="italic font-light">yang tenang.</span></h2>
+      <p class="text-sm leading-6 opacity-60 mt-4">
+        FEA lahir sebagai kedai dan roastery lokal di jantung Kraksaan. Kami memanggang sendiri biji-biji Nusantara — ganti musim, ganti cerita — untuk cangkir yang jujur, bersih, dan berkarakter.
+      </p>
+      <p class="text-sm leading-6 opacity-60 mt-3">
+        Butuh tempat kerja yang kondusif? Atau sekadar rehat? Indoor yang teduh, outdoor yang lapang, Wi-Fi kencang, dan barista yang siap merekomendasikan beans sesuai selera.
+      </p>
+      <div class="grid grid-cols-3 gap-3 mt-7">
+        <div class="bg-light border border-ink/5 rounded-2xl p-4 text-center"><i class="bi bi-fire text-primary"></i><div class="text-xs font-semibold mt-1">Roasted In-House</div><div class="text-[11px] opacity-50">Beans berganti</div></div>
+        <div class="bg-light border border-ink/5 rounded-2xl p-4 text-center"><i class="bi bi-laptop text-primary"></i><div class="text-xs font-semibold mt-1">Work Friendly</div><div class="text-[11px] opacity-50">Colokan & Wi-Fi</div></div>
+        <div class="bg-light border border-ink/5 rounded-2xl p-4 text-center"><i class="bi bi-heart text-primary"></i><div class="text-xs font-semibold mt-1">Cash Only</div><div class="text-[11px] opacity-50">Simple</div></div>
+      </div>
+      <div class="flex items-center gap-3 mt-6 text-xs opacity-60">
+        <span class="w-7 h-7 rounded-full bg-light border border-ink/10 grid place-items-center"><i class="bi bi-telephone"></i></span>
+        <span>0812-6111-947</span><span class="opacity-20">·</span><span>Senin–Kamis & Sabtu–Minggu</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="max-w-[1160px] mx-auto px-6 mt-16">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <div class="text-[11px] tracking-[0.18em] uppercase opacity-40">Menu Pilihan</div>
+      <h2 class="font-serif text-[34px] leading-none mt-2">Seduhan <span class="italic font-light">& camilan</span> harian.</h2>
+    </div>
+    <div class="text-xs opacity-50 max-w-[32ch] leading-5">Varian beans single origin dapat berganti sesuai hasil sangrai terbaru di bar. Tanya barista untuk rekomendasi.</div>
+  </div>
+
+  <div class="flex flex-wrap gap-2 mt-6" id="filterBar">
+    <button data-filter="all" class="filter-btn active bg-ink text-white px-5 py-2 rounded-full text-xs font-medium">Semua</button>
+    <button data-filter="manual" class="filter-btn bg-white border border-ink/10 px-5 py-2 rounded-full text-xs font-medium hover:border-ink/20">Manual Brew</button>
+    <button data-filter="espresso" class="filter-btn bg-white border border-ink/10 px-5 py-2 rounded-full text-xs font-medium hover:border-ink/20">Espresso</button>
+    <button data-filter="noncoffee" class="filter-btn bg-white border border-ink/10 px-5 py-2 rounded-full text-xs font-medium hover:border-ink/20">Non-Coffee</button>
+    <button data-filter="snack" class="filter-btn bg-white border border-ink/10 px-5 py-2 rounded-full text-xs font-medium hover:border-ink/20">Snack</button>
+  </div>
+
+  <div id="menuGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+    <article data-cat="manual" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Manual Brew</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">V60 Pourover</h3><p class="text-xs opacity-50 leading-4 mt-1">Single origin, clean & floral. Ganti beans mingguan.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 28K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+    <article data-cat="manual" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Manual Brew</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Japanese Ice Drip</h3><p class="text-xs opacity-50 leading-4 mt-1">Chilled brew, bright acidity.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 32K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+    <article data-cat="manual" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-accent text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Beans</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">AeroPress</h3><p class="text-xs opacity-50 leading-4 mt-1">Full body, sweet finish.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 30K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+    <article data-cat="manual" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-accent text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Retail</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Roasted Beans 200g</h3><p class="text-xs opacity-50 leading-4 mt-1">Bawa pulang, giling sesuai selera.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 85K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+
+    <article data-cat="espresso" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Espresso</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Cappuccino</h3><p class="text-xs opacity-50 leading-4 mt-1">Espresso, steamed milk, foam tebal.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 28K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+    <article data-cat="espresso" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-primary text-white text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Signature</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Es Kopi Susu Gula Aren</h3><p class="text-xs opacity-50 leading-4 mt-1">Espresso, susu segar, sirup aren FEA.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 25K</b><button class="w-8 h-8 rounded-full bg-primary text-white grid place-items-center"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+    <article data-cat="espresso" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Espresso</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Americano / Long Black</h3><p class="text-xs opacity-50 leading-4 mt-1">Hitam pekat, aroma panggang.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 22K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+    <article data-cat="espresso" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Espresso</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Caffè Latte</h3><p class="text-xs opacity-50 leading-4 mt-1">Smooth, milky, latte art.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 28K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+
+    <article data-cat="noncoffee" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Non-Coffee</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Matcha Latte</h3><p class="text-xs opacity-50 leading-4 mt-1">Hot / Ice, creamy & earthy.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 26K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+    <article data-cat="noncoffee" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1544787219-7f47cc556763?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Non-Coffee</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Lychee Tea</h3><p class="text-xs opacity-50 leading-4 mt-1">Black tea, lychee, segar.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 22K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+    <article data-cat="noncoffee" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Mocktail</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">Creamy Chocolate</h3><p class="text-xs opacity-50 leading-4 mt-1">Cokelat pekat, susu lembut.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 26K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+
+    <article data-cat="snack" class="menu-card bg-white border border-ink/10 rounded-[24px] overflow-hidden group hover:border-ink/20 transition">
+      <div class="relative h-44 overflow-hidden m-2 rounded-[18px]"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"><span class="absolute left-3 top-3 bg-white/90 backdrop-blur text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-semibold">Snack</span></div>
+      <div class="px-5 pb-5"><h3 class="font-semibold text-sm">French Fries</h3><p class="text-xs opacity-50 leading-4 mt-1">Renyah, sea salt.</p><div class="flex items-center justify-between mt-3"><b class="text-sm">Rp 18K</b><button class="w-8 h-8 rounded-full bg-light border border-ink/10 grid place-items-center hover:bg-primary hover:text-white transition"><i class="bi bi-plus text-sm"></i></button></div></div>
+    </article>
+  </div>
+  <div class="bg-accent border border-ink/10 rounded-2xl px-5 py-4 flex flex-wrap items-center justify-between gap-3 mt-6 text-xs">
+    <span class="opacity-70"><i class="bi bi-info-circle mr-2"></i>Pembayaran cash-only. Harga dapat berubah.</span>
+    <a href="https://wa.me/628126111947?text=Halo%20FEA%2C%20mau%20tanya%20menu%20hari%20ini" target="_blank" class="bg-white border border-ink/10 px-4 py-2 rounded-full font-medium hover:border-ink/20">Tanya Barista →</a>
+  </div>
+</section>
+
+<section id="fasilitas" class="max-w-[1160px] mx-auto px-6 mt-16">
+  <div class="grid lg:grid-cols-3 gap-4">
+    <div class="lg:col-span-1 bg-primary text-white rounded-[28px] p-8">
+      <div class="text-[11px] tracking-[0.18em] uppercase opacity-60">Kenapa FEA</div>
+      <h3 class="font-serif text-[28px] leading-none mt-3">Nyaman untuk<br><span class="italic font-light opacity-80">lama-lama.</span></h3>
+      <p class="text-sm leading-6 opacity-70 mt-4">Suasana tenang, cahaya natural, dan meja yang pas untuk laptop. Mau fokus kerja atau sekadar ngopi sore — semua dapat tempat.</p>
+      <div class="mt-6 flex gap-2">
+        <span class="bg-white/10 rounded-full px-3 py-1.5 text-xs">Dine-in</span>
+        <span class="bg-white/10 rounded-full px-3 py-1.5 text-xs">Takeaway</span>
+        <span class="bg-white/10 rounded-full px-3 py-1.5 text-xs">Delivery</span>
+      </div>
+    </div>
+    <div class="lg:col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="bg-white border border-ink/10 rounded-2xl p-5"><i class="bi bi-wifi text-lg"></i><div class="text-sm font-semibold mt-3">Wi-Fi Gratis</div><div class="text-xs opacity-50 mt-1">Kencang & stabil</div></div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-5"><i class="bi bi-door-open text-lg"></i><div class="text-sm font-semibold mt-3">Indoor & Outdoor</div><div class="text-xs opacity-50 mt-1">Pilih suasana</div></div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-5"><i class="bi bi-calendar-check text-lg"></i><div class="text-sm font-semibold mt-3">Reservasi</div><div class="text-xs opacity-50 mt-1">Booking tempat</div></div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-5"><i class="bi bi-p-circle text-lg"></i><div class="text-sm font-semibold mt-3">Parkir Gratis</div><div class="text-xs opacity-50 mt-1">Tepi jalan</div></div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-5"><i class="bi bi-cup-hot text-lg"></i><div class="text-sm font-semibold mt-3">Roastery</div><div class="text-xs opacity-50 mt-1">Sangrai sendiri</div></div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-5"><i class="bi bi-bag text-lg"></i><div class="text-sm font-semibold mt-3">Takeaway</div><div class="text-xs opacity-50 mt-1">Bungkus cepat</div></div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-5"><i class="bi bi-truck text-lg"></i><div class="text-sm font-semibold mt-3">Delivery</div><div class="text-xs opacity-50 mt-1">Antar ke lokasi</div></div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-5"><i class="bi bi-droplet text-lg"></i><div class="text-sm font-semibold mt-3">Toilet</div><div class="text-xs opacity-50 mt-1">Bersih & nyaman</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="lokasi" class="max-w-[1160px] mx-auto px-6 mt-16">
+  <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-4">
+    <div class="bg-white border border-ink/10 rounded-[28px] p-6 lg:p-8">
+      <div class="text-[11px] tracking-[0.18em] uppercase opacity-40">Kunjungi Kami</div>
+      <h3 class="font-serif text-[30px] leading-none mt-2">Di pusat Kraksaan.</h3>
+      <div class="mt-6 space-y-4 text-sm">
+        <div class="flex gap-3">
+          <span class="w-9 h-9 rounded-full bg-light border border-ink/10 grid place-items-center shrink-0"><i class="bi bi-geo-alt"></i></span>
+          <div><b class="block">Jl. Raya Panglima Sudirman No.47</b><span class="opacity-60">Patokan, Kec. Kraksaan, Kabupaten Probolinggo 67282</span></div>
+        </div>
+        <div class="flex gap-3">
+          <span class="w-9 h-9 rounded-full bg-light border border-ink/10 grid place-items-center shrink-0"><i class="bi bi-telephone"></i></span>
+          <div><b class="block">0812-6111-947</b><span class="opacity-60">WhatsApp & Telepon</span></div>
+        </div>
+      </div>
+      <div class="bg-light border border-ink/10 rounded-2xl p-4 mt-6">
+        <div class="text-xs font-semibold tracking-wide">Jam Operasional</div>
+        <div class="mt-3 space-y-2 text-sm">
+          <div class="flex justify-between"><span class="opacity-60">Senin – Kamis</span><b>09.00 – 17.00</b></div>
+          <div class="flex justify-between bg-white border border-ink/10 rounded-full px-3 py-1.5"><span>Jumat</span><span class="bg-primary text-white text-xs px-2.5 py-0.5 rounded-full">Tutup</span></div>
+          <div class="flex justify-between"><span class="opacity-60">Sabtu – Minggu</span><b>09.00 – 17.00</b></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-3 mt-6">
+        <a href="https://wa.me/628126111947" target="_blank" class="flex-1 bg-primary text-white text-center py-3 rounded-full text-sm font-medium hover:bg-primaryDark transition"><i class="bi bi-whatsapp mr-2"></i>Chat WhatsApp</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Panglima+Sudirman+No.47+Kraksaan+Probolinggo" target="_blank" class="flex-1 bg-white border border-ink/10 text-center py-3 rounded-full text-sm font-medium hover:border-ink/20 transition">Buka Maps</a>
+      </div>
+    </div>
+    <div class="rounded-[28px] overflow-hidden border border-ink/10 bg-white p-2">
+      <div class="w-full h-full min-h-[420px] rounded-[20px] overflow-hidden bg-light relative">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover absolute inset-0 opacity-60">
+        <div class="absolute inset-0 grid place-items-center">
+          <div class="bg-white rounded-2xl px-5 py-4 shadow-xl border border-ink/10 text-center">
+            <div class="w-10 h-10 rounded-full bg-primary text-white grid place-items-center mx-auto"><i class="bi bi-geo-alt-fill"></i></div>
+            <b class="block text-sm mt-2">FEA Coffea</b>
+            <span class="text-xs opacity-50">Kraksaan, Probolinggo</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Panglima+Sudirman+No.47+Kraksaan+Probolinggo" target="_blank" class="mt-3 inline-flex bg-ink text-white text-xs px-4 py-2 rounded-full">Petunjuk Arah <i class="bi bi-box-arrow-up-right ml-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-[1160px] mx-auto px-6 mt-10">
+  <div class="bg-ink rounded-[28px] px-8 py-10 flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
+    <div>
+      <h3 class="font-serif text-[28px] text-white leading-none">Mau reservasi <span class="italic font-light text-accent">meja?</span></h3>
+      <p class="text-sm text-white/60 mt-2">Chat WhatsApp, kami siapkan tempat terbaik untukmu.</p>
+    </div>
+    <a href="https://wa.me/628126111947?text=Halo%20FEA%2C%20mau%20reservasi%20meja" target="_blank" class="bg-accent text-ink px-8 py-3 rounded-full text-sm font-semibold inline-flex items-center gap-2 whitespace-nowrap">Reservasi Sekarang <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+
+<footer class="max-w-[1160px] mx-auto px-6 mt-10 mb-6">
+  <div class="bg-white border border-ink/10 rounded-[24px] px-6 lg:px-8 py-7 flex flex-col lg:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <img src="assets/logo.png" class="h-8 w-8 rounded-full border border-ink/10 bg-white object-contain">
+      <div class="text-xs leading-tight"><b class="block text-sm font-serif">FEA Coffea</b><span class="opacity-50">© 2026 · Kraksaan, Probolinggo · Cash only</span></div>
+    </div>
+    <div class="flex items-center gap-5 text-xs opacity-60">
+      <a href="#beranda" class="hover:opacity-100">Beranda</a>
+      <a href="#menu" class="hover:opacity-100">Menu</a>
+      <a href="https://wa.me/628126111947" class="inline-flex items-center gap-1.5 bg-light border border-ink/10 px-3 py-1.5 rounded-full"><i class="bi bi-instagram"></i> Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
